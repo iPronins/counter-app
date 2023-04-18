@@ -5,6 +5,7 @@
   --black: #1c2b2d;
   --blue: #31326f;
   --light-blue: #005490;
+  --very-light-blue: rgb(55, 126, 177);
   --color-primary: #9d0191;
   --color-sec: #db6400;
   --grey: #eee;
@@ -23,6 +24,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--very-light-blue);
 }
 
 p {
@@ -49,6 +51,7 @@ img {
   border: 1px solid var(--grey);
   padding: 1rem 1rem 0 1rem;
   background-color: var(--light-blue);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1);
   align-items: center;
   color: var(--white);
   font-weight: 700;
@@ -73,6 +76,14 @@ img {
   outline: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.buttons button:hover {
+  filter: brightness(1.2);
+}
+
+button.reset:hover {
+  filter: brightness(0.9);
 }
 
 button.subtract {
